@@ -657,3 +657,128 @@ section, footer {
     scale(1.08);
   filter: saturate(140%) brightness(1.05);
 }
+
+
+
+
+
+
+/* ================= MOBILE RESPONSIVE LAYER ================= */
+@media (max-width: 768px) {
+
+  /* Reduce huge paddings */
+  .section {
+    padding: 50px 16px;
+  }
+
+  /* Headings scale down */
+  h1 { font-size: 32px; }
+  h2 { font-size: 28px; }
+  h3 { font-size: 22px; }
+  h4 { font-size: 20px; }
+  h5 { font-size: 18px; }
+
+  .section-title {
+    font-size: 26px;
+    margin-bottom: 24px;
+  }
+
+  /* HERO */
+  .hero {
+    min-height: auto;
+    padding-top: 120px;
+    padding-bottom: 60px;
+    text-align: center;
+  }
+
+  .hero-img {
+    max-width: 220px;
+    margin: 0 auto 25px;
+  }
+
+  .hero-socials {
+    justify-content: center;
+  }
+
+  /* PROJECT CARDS */
+  .project-img {
+    height: 200px;
+  }
+
+  .project-card {
+    padding: 8px;
+  }
+
+  .project-card h5 {
+    font-size: 18px;
+  }
+
+  /* EXPERIENCE CARDS */
+  .exp-card {
+    padding: 8px;
+  }
+
+  /* SKILL CARDS */
+  .skill-card {
+    padding: 20px;
+  }
+
+  /* ACHIEVEMENTS */
+  .achievement-card {
+    height: auto;
+  }
+
+  .achievement-img {
+    height: 320px;
+  }
+
+  /* ABOUT */
+  .about-card {
+    padding: 30px 20px;
+  }
+
+  /* FOOTER */
+  .footer-socials {
+    gap: 14px;
+  }
+
+  /* NAVBAR */
+  .navbar .nav-link {
+    padding: 6px 14px;
+    font-size: 14px;
+  }
+
+  /* STICKERS — keep them light on mobile */
+  .sticker {
+    width: 100px !important;
+    opacity: 0.4;
+  }
+
+  .s1, .s2, .s3, .s4, .s5, .s6 {
+    filter: blur(0.5px);
+  }
+
+}
+
+
+/* EXTRA SMALL PHONES */
+@media (max-width: 480px) {
+
+  .hero-name {
+    font-size: 28px;
+  }
+
+  .project-img {
+    height: 170px;
+  }
+
+  .achievement-img {
+    height: 260px;
+  }
+
+  .social-icon {
+    width: 42px;
+    height: 42px;
+  }
+
+}
