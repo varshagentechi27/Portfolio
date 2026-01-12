@@ -1,0 +1,525 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <title>Varsha | Full Stack Developer</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+  <!-- ================= BOOTSTRAP (layout, grid, navbar, carousel) ================= -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" />
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+
+
+  <!-- ================= ICONS ================= -->
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" rel="stylesheet" />
+
+  <!-- ================= GOOGLE FONTS ================= -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&family=Inter&display=swap" rel="stylesheet" />
+
+  <!-- ================= YOUR MAIN STYLES ================= -->
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+
+
+<body data-bs-spy="scroll" data-bs-target="#mainNav" data-bs-offset="80" tabindex="0">
+
+  
+
+  <!-- ================= FLOATING STICKERS (background layer) ================= -->
+  <div class="sticker-layer">
+    <img src="images/sticker-blast.png" class="sticker s1" />
+    <img src="images/sticker-spiral.png" class="sticker s2" />
+    <img src="images/sticker-rainbow.png" class="sticker s3"/>
+    <img src="images/sticker-splash.png" class="sticker s4" />
+    <img src="images/sticker-arrow.png" class="sticker s5" />
+    <img src="images/sticker-star.png" class="sticker s6" />
+  </div>
+
+  <!-- ================= NAV BAR (Bootstrap) ================= -->
+  <nav id="mainNav" class="navbar navbar-expand-lg fixed-top">
+    <div class="container">
+      <a class="navbar-brand fw-bold text-orange" href="#home">Varsha</a>
+
+      <button class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#nav">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+       <div id="nav" class="collapse navbar-collapse">
+        <ul class="navbar-nav ms-auto gap-3">
+          <li class="nav-item"><a class="nav-link" href="#home">Home</a></li>
+          <li class="nav-item"><a class="nav-link" href="#experience">Experience</a></li>
+          <li class="nav-item"><a class="nav-link" href="#projects">Projects</a></li>
+          <li class="nav-item"><a class="nav-link" href="#skills">Skills</a></li>
+          <li class="nav-item"><a class="nav-link" href="#education">Education</a></li>
+          <li class="nav-item"><a class="nav-link" href="#achievements">Achievements</a></li>
+          <li class="nav-item"><a class="nav-link" href="#others">More Info</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- ================= HERO ================= -->
+  <section id="home" class="hero d-flex align-items-center">
+    <div class="container">
+      <div class="row align-items-center">
+
+        <div class="col-md-7">
+          <h1 class="fw-bold display-5">
+            Hi, I'm <span class="hero-name">Varsha</span>
+          </h1>
+          <h4 class="mb-3">Full Stack Developer</h4>
+          <p class="lead">
+            Crafting intelligent, scalable software to solve real-world problems.
+          </p>
+        
+          <!-- Social Icons -->
+          <div class="hero-socials mt-4">
+            <a href="https://www.linkedin.com/in/varsha-725987257/" target="_blank" class="social-icon"><i class="fab fa-linkedin-in"></i></a>
+            <a href="https://github.com/Varshavars" target="_blank" class="social-icon"><i class="fab fa-github"></i></a>
+            <a href="https://leetcode.com/u/Varsha_27_/" target="_blank" class="social-icon"><i class="fa-solid fa-code"></i></a>
+            <a href="mailto:varsha.gentechi@gmail.com" class="social-icon"><i class="fa-solid fa-envelope"></i></a>
+          </div>
+        </div>
+
+        <div class="col-md-5 text-center">
+          <img src="images/varsha.png" class="hero-img" alt="Varsha" />
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+
+<!-- ================= EXPERIENCE ================= -->
+<section id="experience" class="section bg-soft">
+  <div class="container">
+    <h2 class="section-title text-center">Experience</h2>
+
+    <div class="row g-4">
+
+      <!-- SFA -->
+      <div class="col-md-6">
+        <div class="card post-card exp-card">
+          <div class="card-body">
+            <h5>Digital Scorer Intern – SFA</h5>
+            <p>
+              Managed backend operations for SFA’s official website, handling real-time
+              score updates for 2500+ matches with 100% accuracy and reducing medal tally
+              update time by 30%.
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <!-- InternPe -->
+      <div class="col-md-6">
+        <div class="card post-card exp-card">
+          <div class="card-body">
+            <h5>Java Programming Intern – InternPe</h5>
+            <p>
+              Developed Connect-4 and Tic-Tac-Toe using Spring Boot and REST APIs,
+              improving application responsiveness by 20% and reducing loading times by 15%.
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <!-- COHO -->
+      <div class="col-md-6">
+        <div class="card post-card exp-card">
+          <div class="card-body">
+            <h5>Java Co-Lead – Code Hopper (COHO)</h5>
+            <p>
+              Conducted programming sessions, mentored club members, anchored technical
+              events, and coordinated workshops to build strong coding culture within the club.
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Freelancing -->
+      <div class="col-md-6">
+        <div class="card post-card exp-card">
+          <div class="card-body">
+            <h5>Freelancer – Content & Social Media</h5>
+            <p>
+              Created digital content, handled social media pages, photography, and video
+              editing for multiple clients, helping improve online presence and engagement.
+            </p>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- ================= PROJECTS ================= -->
+<section id="projects" class="section">
+  <div class="container">
+    <h2 class="section-title text-center">Projects</h2>
+
+    <div class="row g-4">
+
+      <!-- SHOUT -->
+      <div class="col-md-6">
+        <div class="card post-card project-card">
+
+          <div class="project-img">
+            <img src="images/shout.png" alt="SHOUT App">
+          </div>
+
+          <div class="card-body">
+            <h5>SHOUT – Safety Mobile App</h5>
+            <small class="project-tech">Android Java, Android Studio, XML</small>
+            <p>
+              A personal safety app that sends emergency alerts with real-time location
+              in offline mode within 2 seconds, with a false-alarm prevention system
+              reducing accidental triggers by 30%.
+            </p>
+          </div>
+
+        </div>
+      </div>
+
+      <!-- WORD WHIZ -->
+      <div class="col-md-6">
+        <div class="card post-card project-card">
+
+          <div class="project-img">
+            <img src="images/wordwhiz.png" alt="Word Whiz Game">
+          </div>
+
+          <div class="card-body">
+            <h5>WORD-WHIZ – Guess the Word Game</h5>
+            <small class="project-tech">Spring Boot, HTML, CSS, STS4</small>
+            <p>
+              A Spring-based word guessing game that boosts engagement by 25% using
+              restricted attempts and improved long-term retention by 20%
+              through a competitive scoring system.
+            </p>
+          </div>
+
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+
+
+<!-- ================= SKILLS ================= -->
+<section id="skills" class="section bg-soft">
+  <div class="container">
+    <h2 class="section-title text-center">Skills</h2>
+
+    <div class="row g-4">
+
+      <!-- 1. Core Programming & Backend -->
+      <div class="col-md-6 col-lg-3">
+        <div class="skill-card project-card">
+          <h5>Core Programming & Backend</h5>
+
+          <p>Java 17 (Spring, JDBC, J2EE, OOP, Collections)</p>
+          <div class="progress"><div class="progress-bar java"></div></div>
+
+          <p>MySQL</p>
+          <div class="progress"><div class="progress-bar mysql"></div></div>
+
+          <p>Python</p>
+          <div class="progress"><div class="progress-bar python"></div></div>
+
+          <p>MongoDB</p>
+          <div class="progress"><div class="progress-bar mongo"></div></div>
+        </div>
+      </div>
+
+      <!-- 2. Frontend & Web -->
+      <div class="col-md-6 col-lg-3">
+        <div class="skill-card project-card">
+          <h5>Frontend & Web Technologies</h5>
+
+          <p>HTML5</p>
+          <div class="progress"><div class="progress-bar html"></div></div>
+
+          <p>CSS3</p>
+          <div class="progress"><div class="progress-bar css"></div></div>
+
+          <p>JavaScript</p>
+          <div class="progress"><div class="progress-bar js"></div></div>
+
+          <p>Bootstrap</p>
+          <div class="progress"><div class="progress-bar bs"></div></div>
+        </div>
+      </div>
+
+      <!-- 3. Developer Tools & Platforms -->
+      <div class="col-md-6 col-lg-3">
+        <div class="skill-card project-card">
+          <h5>Developer Tools & Platforms</h5>
+
+          <p>Spring Tool Suite</p>
+          <div class="progress"><div class="progress-bar sts"></div></div>
+
+           <p>VS Code</p>
+          <div class="progress"><div class="progress-bar vscode"></div></div>
+
+          <p>IntelliJ IDEA</p>
+          <div class="progress"><div class="progress-bar intellij"></div></div>
+
+          <p>Eclipse</p>
+          <div class="progress"><div class="progress-bar eclipse"></div></div>
+
+         
+        </div>
+      </div>
+
+      <!-- 4. Version Control, DSA & Soft Skills -->
+      <div class="col-md-6 col-lg-3">
+        <div class="skill-card project-card">
+          <h5>Professional & Engineering Skills</h5>
+
+          <p>Git & GitHub</p>
+          <div class="progress"><div class="progress-bar git"></div></div>
+
+          <p>DSA (Problem Solving)</p>
+          <div class="progress"><div class="progress-bar dsa"></div></div>
+
+          <p>Communication & Critical Thinking</p>
+          <div class="progress"><div class="progress-bar soft1"></div></div>
+
+          <p>Time Management & Collaborative Teamwork</p>
+          <div class="progress"><div class="progress-bar soft2"></div></div>
+
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+
+
+<!-- ================= EDUCATION ================= -->
+<section id="education" class="section">
+  <div class="container">
+    <h2 class="section-title text-center">Education</h2>
+
+    <div class="edu-stairs">
+
+      <!-- Step 1 -->
+      <div class="edu-step left">
+        <div class="edu-card">
+          <h5>B.Tech in Information Technology</h5>
+          <p>St. Martin’s Engineering College, Hyderabad</p>
+          <span>CGPA: 8.6 | Nov 2021 – May 2025</span>
+        </div>
+      </div>
+
+      <!-- Step 2 -->
+      <div class="edu-step right">
+        <div class="edu-card">
+          <h5>Minor Degree in Data Science</h5>
+          <p>St. Martin’s Engineering College, Hyderabad</p>
+          <span>CGPA: 8.56 | Nov 2023 – May 2025</span>
+        </div>
+      </div>
+
+      <!-- Step 3 -->
+      <div class="edu-step left">
+        <div class="edu-card">
+          <h5>12th Class</h5>
+          <p>Kendriya Vidyalaya, AFS Begumpet, Hyderabad</p>
+          <span>Percentage: 94.6 | April 2020 - June 2021</span>
+        </div>
+      </div>
+
+      <!-- Step 4 -->
+      <div class="edu-step right">
+        <div class="edu-card">
+          <h5>10th Class</h5>
+          <p>Kendriya Vidyalaya, AFS Bagdogra, West Bengal</p>
+          <span>Percentage: 92.2 | April 2018 - March 2019</span>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+
+
+<!-- ================= ACHIEVEMENTS ================= -->
+
+<section id="achievements" class="section bg-soft">
+  <div class="container">
+    <h2 class="section-title text-center">Achievements</h2>
+
+    <div id="achievementCarousel" class="carousel slide mx-auto" data-bs-ride="carousel" style="width:100%;">
+
+      <div class="carousel-inner">
+
+        <!-- MEGATHON -->
+        <div class="carousel-item active">
+          <div class="achievement-card">
+            <div class="achievement-img">
+              <img src="images/megathon.png" alt="MEGATHON Hackathon">
+            </div>
+
+            <div class="achievement-text">
+              <h5>MEGATHON – IIIT Hyderabad</h5>
+              <p>
+                Secured <b>4th position</b> in a 24-hour national hackathon by building
+                an innovative software solution under intense time constraints (2023).
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Chess -->
+        <div class="carousel-item">
+          <div class="achievement-card">
+              <div class="achievement-img">
+              <img src="images/chess.png" alt="CHESS">
+            </div>
+            <div class="achievement-text">
+              <h5>Chess Champion – SMEC</h5>
+              <p>
+                Won the College Annual Sports Day Chess Championship twice (2023 & 2024),
+                demonstrating strategic thinking, focus, and consistency.
+              </p>
+            </div>
+          </div>
+        </div>
+
+           <!-- GDSC -->
+        <div class="carousel-item">
+          <div class="achievement-card">
+             <div class="achievement-img">
+              <img src="images/gdsc.png" alt="GDBC">
+            </div>
+            <div class="achievement-text">
+              <h5>GDSC Study Jams – Google</h5>
+              <p>
+                Successfully completed Google Developer Student Club Study Jams,
+                gaining hands-on exposure to modern development tools and best practices (2024).
+              </p>
+            </div>
+          </div>
+        </div>
+
+
+        <!-- Debugging -->
+        <div class="carousel-item">
+          <div class="achievement-card">
+             <div class="achievement-img">
+              <img src="images/debug.png" alt="Debugger Winner">
+            </div>
+            <div class="achievement-text">
+              <h5>Code Debugging Winner – SMEC</h5>
+              <p>
+                Recognized for identifying and fixing complex bugs efficiently in a
+                competitive coding environment (2023).
+              </p>
+            </div>
+          </div>
+        </div>
+
+
+      </div>
+
+      <!-- Controls -->
+      <button class="carousel-control-prev" type="button" data-bs-target="#achievementCarousel" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon"></span>
+      </button>
+
+      <button class="carousel-control-next" type="button" data-bs-target="#achievementCarousel" data-bs-slide="next">
+        <span class="carousel-control-next-icon"></span>
+      </button>
+
+    </div>
+  </div>
+</section>
+
+
+
+<!-- ================= MORE ABOUT ME ================= -->
+<section id="others" class="section">
+  <div class="container">
+    <h2 class="section-title text-center">More About Me</h2>
+
+    <div class="row justify-content-center">
+      <div class="col-lg-8">
+
+        <div class="about-card">
+          <h4>Beyond Code ✨</h4>
+
+          <p>
+            I am from <b>Uttar Pradesh</b> and currently living in <b>Hyderabad</b>.
+            I love exploring new technologies, meeting people, and constantly learning
+            something new.
+          </p>
+
+          <p>
+            Outside of coding, I enjoy <b>watching anime</b>, working out at the gym,
+            <b>content creation</b>, reel making, and <b>photography</b>.
+            I find creativity in both technology and art.
+          </p>
+
+          <p>
+            I have participated in many <b>hackathons</b> and <b>technical events</b>,
+            which helped me grow as a problem solver, a team player, and a confident
+            communicator.
+          </p>
+
+          <p>
+            I genuinely love learning new things — whether it’s a new programming
+            concept, a new creative skill, or a new challenge.
+          </p>
+
+        </div>
+
+      </div>
+    </div>
+  </div>
+</section>
+
+
+
+<!-- ============== FOOTER ============================== -->
+<footer class="footer">
+  <div class="container text-center">
+
+    <!-- Social Icons -->
+    <div class="footer-socials">
+      <a href="https://www.linkedin.com/in/varsha-725987257/" target="_blank" class="social-icon" title="LinkedIn">
+        <i class="fab fa-linkedin-in"></i>
+      </a>
+
+      <a href="https://github.com/Varshavars" target="_blank" class="social-icon" title="GitHub">
+        <i class="fab fa-github"></i>
+      </a>
+
+      <a href="https://leetcode.com/u/Varsha_27_/" target="_blank" class="social-icon" title="LeetCode">
+        <i class="fa-solid fa-code"></i>
+      </a>
+
+      <a href="mailto:varsha.gentechi@gmail.com" class="social-icon" title="Gmail">
+        <i class="fa-solid fa-envelope"></i>
+      </a>
+    </div>
+
+    <!-- Copyright -->
+    <p class="mt-3">
+      © 2026 Varsha | Full Stack Developer
+    </p>
+
+  </div>
+</footer>
+
+
+
+</body>
+</html>

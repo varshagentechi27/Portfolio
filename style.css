@@ -1,0 +1,659 @@
+body {
+  font-family: 'Inter', sans-serif;
+  background-color: #fffaf3;
+  background-image:
+    linear-gradient(#e6e6e6 1px, transparent 1px),
+    linear-gradient(90deg, #e6e6e6 1px, transparent 1px);
+  background-size: 40px 40px;
+  
+}
+
+h1, h2, h3, h4, h5 {
+  font-family: 'Poppins', sans-serif;
+}
+
+.text-orange {
+  color: #d35400;
+}
+
+.navbar {
+  backdrop-filter: blur(10px);
+}
+
+.hero {
+  min-height: 100vh;
+}
+
+.hero-img {
+  max-width: 280px;
+  border-radius: 30px;
+}
+
+.section {
+  padding: 80px 0;
+}
+
+.bg-soft {
+  background: rgba(255, 243, 230, 0.85);
+}
+
+.section-title{
+  background: linear-gradient(135deg, #ff9f45, #d35400);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-weight: 800;
+  letter-spacing: 1px;
+  text-align: center;
+  margin-bottom: 40px;
+  transition: all 0.4s ease;
+}
+
+/* Soft glow on hover */
+.section-title:hover{
+  text-shadow: 
+    0 0 30px rgba(255,159,69,0.4),
+    0 0 1px rgba(211,84,0,0.35);
+  transform: translateY(-3px);
+}
+
+
+.btn-orange {
+  background: #d35400;
+  color: white;
+  border-radius: 30px;
+}
+
+.btn-outline-orange {
+  border: 2px solid #d35400;
+  color: #d35400;
+  border-radius: 30px;
+}
+
+.post-card {
+  border-radius: 18px;
+  overflow: hidden;
+  box-shadow: 0 10px 25px rgba(0,0,0,0.12);
+}
+
+.img-placeholder {
+  height: 180px;
+  background: #ddd;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: bold;
+}
+
+.edu-card {
+  padding: 40px;
+  text-align: center;
+  background: white;
+  border-radius: 20px;
+  box-shadow: 0 8px 18px rgba(0,0,0,0.1);
+}
+
+.contact-link {
+  text-decoration: none;
+  font-weight: 600;
+  color: #d35400;
+}
+
+footer {
+  background: #d35400;
+  color: white;
+}
+
+
+/*  ============ STICKERS ================ */
+/* ================= FLOATING STICKER LAYER ================= */
+
+.sticker-layer{
+  position: fixed;
+  inset: 0;
+  pointer-events: none;
+  z-index: 0;
+  overflow: hidden;
+}
+
+.sticker{
+  position: absolute;
+  opacity: 0.7;
+  filter: saturate(120%);
+  will-change: transform;
+  transition: transform 0.05s linear;
+}
+
+/* Initial positions */
+.s1{ top: 15%; left: 6%; width: 120px;}
+.s2{ top: 78%; left: 24%; width: 150px;}
+.s3{ top: 15%; right: 5%; width: 160px;}
+.s4{ bottom: 6%; right: 6%; width: 120px;}
+.s5{ top: 55%; left: 56%; width: 100px;}
+.s6{ top: 23%; left: 38%; width: 170px;}
+
+section, footer {
+  position: relative;
+  z-index: 2;
+}
+
+.navbar {
+  z-index: 9999;
+}
+
+
+
+
+/* ================= NAVBAR LINKS ================= */
+
+/* Base nav link style */
+.navbar .nav-link {
+  padding: 8px 16px;                /* Makes links feel like buttons */
+  border-radius: 999px;            /* Pill shape */
+  color: #333;
+  font-weight: 600;
+  position: relative;
+  transition: all 0.35s ease;      /* Smooth animation for everything */
+}
+
+/* Hover effect */
+.navbar .nav-link:hover {
+  color: #d35400;                  /* Theme orange */
+  background: rgba(211, 84, 0, 0.12); /* Soft orange glass */
+  box-shadow: 
+    0 8px 20px rgba(211, 84, 0, 0.25), /* Orange glow */
+    inset 0 0 0 1px rgba(211, 84, 0, 0.3); /* Subtle inner border */
+  transform: translateY(-2px);     /* Tiny lift */
+}
+
+/* Active section (scrollspy) */
+.navbar .nav-link.active {
+  color: #fff;
+  background: linear-gradient(135deg, #ff9f45, #d35400);
+  box-shadow: 0 10px 25px rgba(211, 84, 0, 0.4);
+}
+
+
+
+
+/* ================= HERO SOCIAL ICONS ================= */
+
+.hero-name{
+  background: linear-gradient(135deg, #ff9f45, #d35400);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-weight: 800;
+  letter-spacing: 0.8px;
+  position: relative;
+  display: inline-block;
+  transition: all 0.4s ease;
+}
+
+/* Soft glow on hover */
+.hero-name:hover{
+  text-shadow: 
+    0 0 30x rgba(255,159,69,0.4),
+    0 0 10px rgba(211,84,0,0.35);
+  transform: translateY(-2px);
+}
+
+
+/* Container holding all icons */
+.hero-socials {
+  display: flex;                 /* Align icons in a row */
+  gap: 18px;                     /* Space between icons */
+  margin-top: 20px;
+}
+
+/* Each social icon button */
+.social-icon {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;            /* Makes icons circular */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #d35400;                /* Orange icon */
+  background: rgba(211, 84, 0, 0.08);  /* Soft orange glass background */
+  border: 2px solid rgba(211, 84, 0, 0.3); /* Subtle border */
+  font-size: 20px;               /* Icon size */
+  text-decoration: none;        /* Remove underline */
+  transition: all 0.35s ease;    /* Smooth hover animation */
+}
+
+/* Hover animation */
+.social-icon:hover {
+  background: linear-gradient(135deg, #ffb347, #d35400); /* Orange gradient */
+  color: white;                 /* Icon turns white */
+  transform: translateY(-6px) scale(1.08);  /* Lift + zoom */
+  box-shadow: 0 15px 30px rgba(211, 84, 0, 0.4); /* Glow */
+}
+
+/* Smooth animation for icon itself */
+.social-icon i {
+  transition: transform 0.3s ease;
+}
+
+/* Small rotation on hover for premium feel */
+.social-icon:hover i {
+  transform: rotate(-5deg) scale(1.1);
+}
+
+ 
+
+
+
+
+/* ================= EXPERIENCE POSTCARDS ================= */
+
+/* Base experience card */
+.exp-card {
+  background: white;
+  border-radius: 18px;
+  padding: 10px;
+  border: 2px solid transparent;          /* Hidden border initially */
+  transition: all 0.4s ease;              /* Smooth hover animation */
+}
+
+/* When hovering over an experience card */
+.exp-card:hover {
+  border: 2px solid #d35400;               /* Orange outline */
+  box-shadow: 
+    0 15px 35px rgba(211, 84, 0, 0.35),     /* Orange glow */
+    inset 0 0 0 1px rgba(211, 84, 0, 0.4);  /* Inner glass border */
+  transform: translateY(-8px);            /* Card lifts up */
+}
+
+/* Title inside card */
+.exp-card h5 {
+  color: #d35400;
+  font-weight: 700;
+}
+
+/* Description text */
+.exp-card p {
+  color: #555;
+  line-height: 1.6;
+}
+
+/* ================= PROJECT CARDS ================= */
+
+.project-card {
+  background: white;
+  border-radius: 18px;
+  padding: 10px;
+  border: 2px solid transparent;
+  transition: all 0.4s ease;
+}
+
+.project-card:hover {
+  border: 2px solid #d35400;
+  box-shadow: 
+    0 15px 35px rgba(211, 84, 0, 0.35),
+    inset 0 0 0 1px rgba(211, 84, 0, 0.4);
+  transform: translateY(-8px);
+}
+
+/* Project image area */
+.project-img {
+  height: 260px;
+  border-radius: 14px;
+  overflow: hidden;              /* Important: keeps rounded corners */
+  background: linear-gradient(135deg, #ffddb8, #ffe8d2);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Actual image */
+.project-img img {
+  width: 100%;
+  height: 100%;
+  /* object-fit: cover;             Makes 16:9 images fit perfectly */
+}
+
+/* Title */
+.project-card h5 {
+  margin-top: 15px;
+  font-weight: 700;
+  color: #d35400;
+}
+
+/* Tech stack */
+.project-tech {
+  display: block;
+  font-size: 13px;
+  color: #888;
+  margin-bottom: 10px;
+}
+
+/* Description */
+.project-card p {
+  color: #555;
+  line-height: 1.6;
+}
+
+
+/* ================= SKILL CARDS ================= */
+
+/* Ensure all four cards stay same height */
+.skill-card {
+  height: 100%;
+  background: white;
+  padding: 24px;
+  border-radius: 18px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  transition: all 0.4s ease;
+}
+
+/* Same glow & lift used in project cards */
+.skill-card:hover {
+  box-shadow:
+    0 15px 35px rgba(211, 84, 0, 0.35),
+    inset 0 0 0 1px rgba(211, 84, 0, 0.4);
+  transform: translateY(-8px);
+}
+
+/* Skill group title */
+.skill-card h5 {
+  color: #d35400;
+  font-weight: 700;
+  margin-bottom: 15px;
+}
+
+/* Skill labels */
+.skill-card p {
+  font-size: 13px;
+  color: #444;
+  margin-bottom: 4px;
+}
+
+/* Progress bar background */
+.progress {
+  height: 8px;
+  background: #ffe2c8;
+  border-radius: 10px;
+  margin-bottom: 12px;
+  overflow: hidden;
+}
+
+/* Progress bar fill */
+.progress-bar {
+  height: 100%;
+  background: linear-gradient(90deg, #ffb347, #d35400);
+  border-radius: 10px;
+}
+
+/* Skill strength levels */
+.java { width: 85%; }
+.mysql { width: 70%; }
+.python { width: 60%; }
+.mongo { width: 40%; }
+
+.html { width: 90%; }
+.css { width: 70%; }
+.js { width: 50%; }
+.bs { width: 75%; }
+
+.sts { width: 50%; }
+.intellij { width: 70%; }
+.eclipse { width: 70%; }
+.vscode { width: 90%; }
+
+.git { width: 75%; }
+.dsa { width: 70%; }
+.soft1 { width: 88%; }
+.soft2 { width: 85%; }
+
+
+/* ================= EDUCATION STAIRCASE ================= */
+
+/* Wrapper for staircase */
+.edu-stairs {
+  position: relative;
+  margin-top: 60px;
+  padding: 0 80px;                 /* Pull cards away from screen edges */
+}
+
+/* Vertical center line */
+.edu-stairs::before {
+  content: "";
+  position: absolute;
+  left: 50%;
+  top: 0;
+  transform: translateX(-50%);
+  width: 4px;
+  height: 100%;
+  background: linear-gradient(
+    to bottom,
+    #ffb347,
+    #d35400
+  );                              /* Orange gradient line */
+  border-radius: 10px;
+}
+
+/* Each step */
+.edu-step {
+  display: flex;
+  margin-bottom: 60px;
+  position: relative;
+}
+
+/* Left aligned cards */
+.edu-step.left {
+  justify-content: flex-start;
+}
+
+/* Right aligned cards */
+.edu-step.right {
+  justify-content: flex-end;
+}
+
+/* Education card */
+.edu-card {
+  width: 480px;
+  background: white;
+  padding: 25px 30px;
+  border-radius: 20px;
+  position: relative;
+  border-left: 6px solid #d35400;
+  transition: all 0.4s ease;
+}
+
+/* Hover glow */
+.edu-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 18px 40px rgba(211, 84, 0, 0.35);
+}
+
+/* Orange dot connecting card to line */
+.edu-step::after {
+  content: "";
+  position: absolute;
+  top: 60px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 14px;
+  height: 14px;
+  background: #d35400;
+  border-radius: 50%;
+  box-shadow: 0 0 0 6px rgba(211, 84, 0, 0.2);
+}
+
+  /* ================= MOBILE FIX FOR EDUCATION DOT ================= */
+@media (max-width: 670px) {
+  
+  /* Push orange connector dot behind the cards on small screens */
+  .edu-step::after {
+    z-index: -1;
+  }
+}
+
+
+/* Text styling */
+.edu-card h5 {
+  color: #d35400;
+  font-weight: 700;
+}
+
+.edu-card p {
+  margin: 0;
+  color: #555;
+}
+
+.edu-card span {
+  display: block;
+  margin-top: 8px;
+  font-size: 13px;
+  color: #999;
+  font-weight: 600;
+}
+
+
+
+/* ================= ACHIEVEMENTS ================= */
+
+
+.achievement-card {
+  background: white;
+  /* border-radius: 20px; */
+  /* padding: 25px; */
+  text-align: center;
+  height: 620px;
+}
+.achievement-img {
+  height: 500px;
+  background: linear-gradient(135deg, #ffe1c6, #ffcf9f);
+  overflow: hidden;
+  position: relative;
+}
+
+/* The image inside */
+.achievement-img img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;   /*Crop nicely like Netflix posters*/
+  transition: transform 0.6s ease;
+}
+
+/* Subtle zoom on hover */
+.achievement-card:hover .achievement-img img {
+  transform: scale(1.01);
+}
+
+
+/* Text area */
+.achievement-text h5 {
+  color: #d35400;
+  font-weight: 700;
+  padding-top: 32px;
+}
+
+.achievement-text p {
+  color: #555;
+  line-height: 1.6;
+}
+
+/* Carousel arrows color */
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+  filter: invert(41%) sepia(80%) saturate(600%) hue-rotate(350deg);
+}
+
+
+
+/* ================= MORE ABOUT ME ================= */
+
+.about-card {
+  background: white;
+  padding: 50px 45px;
+  border-radius: 25px;
+  box-shadow: 0 15px 35px rgba(211, 84, 0, 0.25);
+  transition: all 0.4s ease;
+  text-align: center;
+}
+
+/* Soft glow on hover */
+.about-card:hover {
+  transform: translateY(-8px);
+  box-shadow:
+    0 20px 45px rgba(211, 84, 0, 0.4),
+    inset 0 0 0 1px rgba(211, 84, 0, 0.3);
+}
+
+/* Section title */
+.about-card h4 {
+  color: #d35400;
+  font-weight: 700;
+  margin-bottom: 25px;
+}
+
+/* Paragraph text */
+.about-card p {
+  font-size: 16px;
+  line-height: 1.8;
+  color: #555;
+  margin-bottom: 18px;
+}
+
+
+
+
+
+/* ================= FOOTER ================= */
+
+.footer {
+  background: linear-gradient(135deg, #d35400, #ff9f45);
+  padding: 40px 0 30px;
+  color: white;
+}
+
+/* Social icons row */
+.footer-socials {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+
+/* Reuse hero icon styles */
+.footer .social-icon {
+  width: 48px;
+  height: 48px;
+  background: rgba(255,255,255,0.15);
+  border: 2px solid rgba(255,255,255,0.3);
+  color: white;
+}
+
+/* Hover effect remains same */
+.footer .social-icon:hover {
+  background: white;
+  color: #d35400;
+  box-shadow: 0 12px 25px rgba(255,255,255,0.4);
+}
+
+/* Footer text */
+.footer p {
+  font-size: 14px;
+  letter-spacing: 0.5px;
+}
+/* ================= STICKERS BASE ================= */
+.sticker {
+  position: absolute;
+  opacity: 0.75;
+  filter: saturate(120%);
+  transition: 
+    transform 0.45s cubic-bezier(0.22, 1, 0.36, 1),
+    filter 0.3s ease;
+  will-change: transform;
+  cursor: pointer;
+}
+
+/* ================= 3D FLOAT HOVER ================= */
+.sticker:hover {
+  transform: 
+    translateY(-16px) 
+    rotate(-4deg) 
+    scale(1.08);
+  filter: saturate(140%) brightness(1.05);
+}
