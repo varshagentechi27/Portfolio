@@ -42,7 +42,7 @@ h1, h2, h3, h4, h5 {
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   font-weight: 800;
-  letter-spacing: 1px;
+  letter-spacing: 1px;;
   text-align: center;
   margin-bottom: 40px;
   transition: all 0.4s ease;
@@ -104,6 +104,14 @@ footer {
 }
 
 
+/* Move hero text down ONLY on desktop */
+@media (min-width: 992px) {
+  .hero-content {
+    margin-top: 85px;   /* adjust if needed */
+  }
+}
+
+
 /*  ============ STICKERS ================ */
 /* ================= FLOATING STICKER LAYER ================= */
 
@@ -141,6 +149,57 @@ section, footer {
 }
 
 
+/* ================= RESUME BUTTONS ================= */
+
+.hero-buttons {
+  display: flex;
+  gap: 18px;
+  flex-wrap: wrap;
+  
+}
+
+.btn-resume {
+  padding: 12px 26px;
+  font-weight: 600;
+  font-size: 15px;
+  
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  transition: all 0.35s ease;
+}
+
+/* Hover polish */
+.btn-resume:hover {
+  transform: translateY(-3px);
+  
+}
+
+
+/* Mobile center */
+@media (max-width: 768px) {
+  .hero-buttons {
+    justify-content: center;
+  }
+}
+
+/* Download Resume default */
+.btn-download {
+  background: linear-gradient(135deg, #ff9f45, #d35400);
+  color: white;
+  border: 2px solid transparent;
+
+  border-radius: 9999px;        /* ADD */
+  overflow: hidden;             /* ADD */
+  background-clip: padding-box; /* ADD */
+}
+
+/* Hover: fade background, keep size same */
+.btn-download:hover {
+  background: transparent;
+  color: #000;
+  border: 2px solid transparent; /* SAME border size */
+}
 
 
 /* ================= NAVBAR LINKS ================= */
@@ -274,6 +333,23 @@ section, footer {
   color: #555;
   line-height: 1.6;
 }
+/* Experience duration (month – year) */
+.exp-duration {
+  display: block;
+  font-size: 13px;
+  font-weight: 600;
+  color: #888;
+  margin-bottom: 10px;
+}
+/* Tech stack under experience title */
+.exp-tech {
+  display: block;
+  font-size: 12.5px;
+  font-weight: 600;
+  color: #999;
+  margin-bottom: 10px;
+}
+
 
 /* ================= PROJECT CARDS ================= */
 
@@ -387,9 +463,9 @@ section, footer {
 
 /* Skill strength levels */
 .java { width: 85%; }
-.mysql { width: 70%; }
-.python { width: 60%; }
-.mongo { width: 40%; }
+.spring { width: 60%; }
+.mysql { width: 75%; }
+.python { width: 50%; }
 
 .html { width: 90%; }
 .css { width: 70%; }
@@ -597,6 +673,18 @@ section, footer {
   margin-bottom: 18px;
 }
 
+/* Instagram highlight */
+.insta-link {
+  color: #d35400;
+  font-weight: 700;
+  text-decoration: none;
+  transition: all 0.3s ease;
+}
+
+.insta-link:hover {
+  text-shadow: 0 0 12px rgba(211, 84, 0, 0.45);
+}
+
 
 
 
@@ -679,7 +767,7 @@ section, footer {
   h5 { font-size: 18px; }
 
   .section-title {
-    font-size: 26px;
+    font-size: 30px;
     margin-bottom: 24px;
   }
 
